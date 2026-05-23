@@ -1,0 +1,222 @@
+/* ================= CONFIGURAÇÃO GERAL ================= */
+
+/* Remove margens e espaçamentos padrão do navegador */
+*{
+
+    /* Remove margem padrão */
+    margin:0;
+    
+    /* Remove espaçamento interno padrão */
+    padding:0;
+    
+    /* Faz com que padding e borda não alterem o tamanho do elemento */
+    box-sizing:border-box;
+    
+    }
+    
+    
+    /* Configuração geral do corpo da página */
+    body{
+    
+    /* Define a fonte do site */
+    font-family:Arial, Helvetica, sans-serif;
+    
+    /* Define a cor de fundo da página */
+    background:#f5f5f5;
+    
+    }
+    
+    
+    /* ================= NAVBAR ================= */
+    
+    /* Estilização do cabeçalho */
+    header{
+    text-align: center;
+    /* Cor de fundo azul */
+    background:#000000;
+    
+    /* Cor do texto branca */
+    color:rgb(6, 2, 2);
+    
+    /* Espaçamento interno */
+    padding:15px;
+    
+    }
+
+#bandeira{    
+ width: 100px; /* Ocupa largura total */
+ height: 60px;/* Altura fixa */
+  display:flex;
+  position: absolute;
+  
+}
+
+
+nav{  /*passei meia hora tentando arrumar um problema q era só tirar o comando button do html...*/
+    background-color:#ff0000;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 20px 36px;
+    border-radius: 10px; /* desquadrador, ele deixa a borda redonda.*/
+    color: rgb(255, 230, 0);
+    font-family:Amatic SC;
+}
+
+nav a:hover{
+    background-color:#48050500; /* quando passa o negocio em cima do botão muda de cor, só falta achar cor bonita...*/
+       transition: 0.20s; /*faz a cor mudar na calma, devagar.*/
+       border-radius: 10px; /* desquadrador, ele deixa a borda redonda.*/
+       color: rgb(0, 0, 0);
+   /* Adiciona sublinhado */
+   text-decoration:underline;
+   
+   }
+    
+    /* Barra de navegação */
+    .navbar{
+    
+    /* Ativa o Flexbox */
+    display:flex;
+    
+    /* Espaço entre logo e menu */
+    justify-content:center;
+    
+    /* Alinha verticalmente os elementos */
+    align-items:center;
+    
+    }
+    
+    
+    /* Logo do site */
+    .logo{
+    
+    /* Tamanho da fonte */
+    font-size:24px;
+    
+    /* Texto em negrito */
+    font-weight:bold;
+    
+    }
+    
+    
+    /* Links do menu */
+    nav a{
+    
+    /* Cor do texto */
+    color:white;
+    
+    /* Remove sublinhado */
+    text-decoration:none;
+    
+    /* Espaçamento entre os links */
+    margin-left:20px;
+    
+    /* Texto em negrito */
+    font-weight:bold;
+    
+    }
+    
+    /* ================= BANNER ================= */
+    
+    /* Banner */
+    .banner{
+        background:url('https://oficinadeinverno.com.br/cdn/shop/articles/oficina-de-inverno-viagem-para-a-alemanha-capa.jpg?v=1660071640') no-repeat center;
+        background-size:cover; /* Ajusta imagem */
+        height:400px;
+        width: 2000px;
+        text-align:center; /* Centraliza texto */
+        color:white; /* Texto branco */
+        padding-top:120px; /* Espaço superior */
+    }
+    
+    /* Título do banner */
+    .banner h1{
+        background:rgba(0,0,0,0.5); /* Fundo transparente */
+        display:inline-block;
+        padding:15px;
+        border-radius:5px;
+    }
+    
+    
+    /* ================= CONTEÚDO ================= */
+    
+    /* Container principal */
+    .container{
+        width:90%; /* Largura */
+        margin:30px auto; /* Centraliza */
+    }
+    
+    /* Título */
+    .titulo{
+        margin-bottom:20px; /* Espaço abaixo */
+    }
+    
+    
+    /* ================= CARDS ================= */
+    
+    /* Área dos cards */
+    .cards{
+        text-align:center; /* Centraliza */
+    }
+    
+    /* Card */
+    .card{
+        width: 300px; /* Largura */
+        display:inline-block; /* Lado a lado */
+        margin:10px; /* Espaço entre cards */
+        background:white; /* Fundo branco */
+        border-radius:8px; /* Bordas arredondadas */
+        box-shadow:0 2px 5px rgba(0,0,0,0.1); /* Sombra */
+    }
+    
+    /* Imagem do card */
+    .card img{
+        width: 100%; /* Ocupa largura total */
+        height:160px; /* Altura fixa */
+    }
+    
+    /* Conteúdo do card */
+    .card-content{
+        padding:15px; /* Espaçamento interno */
+    }
+    
+    /* Título do card */
+    .card-content h3{
+        margin-bottom:10px; /* Espaço abaixo */
+    }
+    
+    /* Preço */
+    .preco{
+        color:#ca0d0d; /* Cor azul */
+        font-size:18px; /* Tamanho da fonte */
+        font-weight:bold; /* Negrito */
+    }
+    
+    
+    /* ================= BOTÃO ================= */
+    
+    .botao{
+        display:inline-block; /* Permite espaçamento */
+        margin-top:10px; /* Espaço superior */
+        background:#ffef08; /* Cor azul */
+        color:rgb(0, 0, 0); /* Texto branco */
+        padding:8px 15px; /* Espaçamento */
+        text-decoration:none; /* Remove sublinhado */
+        border-radius:5px; /* Bordas arredondadas */
+    }
+    
+    /* Efeito botão */
+    .botao:hover{
+        background:#ffffff; /* Azul mais escuro */
+    }
+    
+    
+    /* ================= FOOTER ================= */
+    
+    footer{
+        background:#ff0000; /* Fundo escuro */
+        color:white; /* Texto branco */
+        text-align:center; /* Centraliza */
+        padding:20px; /* Espaçamento */
+        margin-top:40px; /* Espaço acima */
+    }

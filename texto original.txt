@@ -1,0 +1,64 @@
+/* Container */
+.flip-card {
+    width: 300px;
+    height: 250px;
+    perspective: 1000px; /* cria o efeito 3D */
+    margin: auto;
+    flex: 0 0 calc(25% - 20px); /* 4 por linha */
+    flex-wrap:wrap ;
+    justify-content: center;
+    width:23%
+  
+}
+.container{
+    width:90%; /* Largura */
+    margin:30px auto; /* Centraliza */
+    flex-wrap: wrap;
+    justify-content: center ;
+    gap: 20px;
+    display: flex;
+}
+
+/* Parte interna que gira */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; 
+}
+
+/* Gira ao passar o mouse */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Frente e verso */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+
+/* Frente */
+.flip-card-front {
+    background: red;
+    color: yellow;
+    font-size: 20px;
+    padding: 20px;;
+}
+
+/* Verso */
+.flip-card-back {
+    background: red;
+    color: yellow;
+    transform: rotateY(180deg);
+  
+}

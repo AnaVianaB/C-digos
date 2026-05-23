@@ -1,0 +1,170 @@
+/* ─── TABELA GRUPO C ─────────────────────────────────────── */
+.tabela-wrapper {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+  }
+  
+  .tabela-grupo {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .tabela-grupo thead tr {
+    background: var(--verde-esc);
+    color: var(--branco);
+  }
+  
+  .tabela-grupo thead th {
+    padding: 0.85rem 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .tabela-grupo thead .th-equipe {
+    text-align: left;
+    padding-left: 1.25rem;
+  }
+  
+  .tabela-grupo tbody tr {
+    border-bottom: 1px solid var(--cinza-2);
+    transition: background 0.15s;
+  }
+  
+  .tabela-grupo tbody tr:hover {
+    background: var(--cinza-1);
+  }
+  
+  .tabela-grupo tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .tabela-grupo tbody td {
+    padding: 0.9rem 1rem;
+    text-align: center;
+    color: var(--preto);
+    font-weight: 600;
+  }
+  
+  .td-rank { width: 60px; }
+  
+  .rank-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--verde-esc);
+  }
+  
+  .td-equipe { text-align: left; padding-left: 1.25rem; }
+  
+  .nome-pais {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--preto);
+  }
+  
+  .linha-classificada {
+    border-left: 4px solid var(--verde);
+  }
+  
+  .linha-classificada .rank-num {
+    color: var(--verde);
+  }
+  
+  /* ─── JOGOS ──────────────────────────────────────────────── */
+  .jogos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .jogo-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .jogo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-hover);
+  }
+  
+  .jogo-competicao {
+    background: var(--verde-esc);
+    color: var(--amarelo);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.45rem 1.5rem;
+  }
+  
+  .jogo-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    gap: 1rem;
+  }
+  
+  .jogo-time {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .time-casa { justify-content: flex-end; }
+  .time-visitante { justify-content: flex-start; }
+  
+  .time-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: var(--preto);
+  }
+  
+  .jogo-placar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+    min-width: 120px;
+    background: var(--cinza-1);
+    border-radius: var(--radius);
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .jogo-data {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--verde-esc);
+  }
+  
+  .jogo-horario {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--cinza-3);
+  }
+  
+  .vs {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    color: var(--amarelo-esc);
+    background: var(--verde-esc);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 2px;
+    letter-spacing: 1px;
+  }

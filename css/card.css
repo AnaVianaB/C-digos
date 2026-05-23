@@ -1,0 +1,215 @@
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ================= BODY ================= */
+
+body{
+    min-height:100vh;
+
+    background-image:url("../imagens/backgroundcortado.jpeg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+header{
+    text-align:center;
+    background:#000000;
+    padding:15px;
+}
+
+/* IMAGEM DA BANDEIRA (mantida no canto) */
+#bandeira{    
+ width: 100px; /* Ocupa largura total */
+ height: 60px;/* Altura fixa */
+  display:flex;
+  position: absolute;
+  
+}
+
+.nav{
+    background-color:#ff0000;
+    font-size:21px;
+    padding:20px 36px;
+    border-radius:10px;
+    color:rgb(255, 230, 0);
+    font-family:Amatic SC;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:yellow;
+}
+
+/* LINKS DO MENU (SEM SUBLINHADO FIXO) */
+nav a{
+    color:white;
+    text-decoration:none; /* remove sublinhado */
+    margin-left:20px;
+    font-weight:bold;
+}
+
+/* efeito hover */
+nav a:hover{
+    transition:0.2s;
+    border-radius:10px;
+    color:black;
+    text-decoration:underline;
+}
+
+/* ================= BANNER ================= */
+
+.banner1{
+    background:url('../imagens/Black and White Simple Germany Travel Presentation.svg') no-repeat center;
+    background-size:cover;
+    height:560px;
+    opacity:0.7;
+}
+
+/* ================= TÍTULOS ================= */
+
+h1{
+    text-align:center;
+    color:rgb(223, 186, 2);
+    margin:20px 0;
+}
+
+h3{
+    color:rgb(223, 186, 2);
+}
+
+/* ================= CARDS ================= */
+
+.cards1{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.card1{
+    width:250px;
+    background:rgba(255, 0, 0, 0.5);
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(242, 242, 2, 0.5);
+}
+
+.card1 p{
+    color:white;
+    line-height:1.6;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:90%;
+    margin:30px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+/* ================= FLIP CARD ================= */
+
+.flip-card{
+    height:200px;
+    perspective:1000px;
+}
+
+.flip-card-inner{
+    width:100%;
+    height:100%;
+    transition:transform 0.6s;
+    transform-style:preserve-3d;
+    position:relative;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform:rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+    background:black;
+    color:yellow;
+    padding:15px;
+}
+
+.flip-card-back{
+    transform:rotateY(180deg);
+    background:rgb(169, 6, 6);
+}
+
+.video{
+    width:100%;
+    height:100%;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+/* ================= JOGADORES ================= */
+
+.cards{
+    text-align:center;
+}
+
+.card{
+    width:200px;
+    height:250px;
+    display:inline-block;
+    margin:10px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#ff0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    width:100%;
+    margin-top:40px;
+}
+
+footer p{
+    border:none;
+    text-decoration:none;
+}
